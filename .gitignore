@@ -1,4 +1,11 @@
+# Ignorar arquivos do macOS
 .DS_Store
-id_rsa*
-.DS_Store
+
+# Ignorar chaves SSH privadas e públicas
+.ssh/id_rsa*
+.ssh/id_rsa.pub
+
+# Ignorar outros arquivos específicos, se necessário
 eval*
+
+
