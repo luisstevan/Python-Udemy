@@ -181,17 +181,15 @@ tupla = tuple(lista) #transforma a lista em uma tupla
 print(type(tupla)) #retorna o tipo da tupla
 
 
-#deep copy
+##deep copy eu copio 2 coisas e se alterar a segunda coisa, a primeira nao vai ser alterada
 lista = [1,2,3]
-
-nova = lista.copy()
+nova = lista.copy() 
 print(nova)
-
 nova.append(4)
-print(lista)
-print(nova)
+print(lista) #permanece inalterada
+print(nova) #alterada (4) 
 
-#shallow copy
+#shallow copy ele copia uma coisa e aloca os dois valores, se um mudar o outro vai mudar tambem
 lista = [1,2,3]
 nova = lista
 print(nova)  
